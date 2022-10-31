@@ -15,7 +15,9 @@
 <ul>
   <li>Arquivo > Abrir Pasta > cypress_vr</li>
   <li>Abrir o terminal</li>
-  <li>Executar o comando: npm i
+  <li>Executar o comando: npm install cypress --save-dev</li>
+  <li>Executar o comando: npm i</li>
+  
 </ul>
 <img width="1427" alt="image" src="https://user-images.githubusercontent.com/50155338/199077013-1feba537-567d-4a0f-9a77-1068aada7575.png">
 <p>Deve baixar as depêndencias conforme imagem abaixo</p>
