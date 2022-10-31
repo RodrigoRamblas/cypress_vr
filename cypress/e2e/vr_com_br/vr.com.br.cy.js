@@ -1,19 +1,19 @@
 describe('Validar o fluxo Para Você', () => {
+  //Acessando o site e aceitando os termos
   beforeEach('Acessar o site VR', () => {
     cy.visit('/')
+    Cypress.Cookies.debug(true)
+    cy.get('#lum_4028808471FC1D5D0171FE80340D6AC8_quickAcceptTerm').click()
+    Cypress.Cookies.preserveOnce('session_id', 'remember_token')
+    cy.get(':nth-child(3) > .vr-quick-navigation__link').click()
   })
-  //Aceitar os Termos de Privacidade
-  it ('Aceitar termos de Privacidade', ()=> {
-    cy.get('#lum_4028808471FC1D5D0171FE80340D6AC8_quickAcceptTerm').click();
-})
 
-//Localizando o botao "PRA VOCE" e clicar
-
+//Clicar no botão  "PRA VOCE"
 it ('Navegar até a seção - pra voce', ()=> {
     cy.get(':nth-child(3) > .vr-quick-navigation__link').click();
 })
 
-//Apos clicar no botao, estou validando se realmente fui direcionado para a pagina correta (/onde-aceita.htm)
+//Validando a pagina atual
 it ('Validar se estou na pagina correta', ()=> {
     cy.url().should(
         'be.equal',
@@ -21,11 +21,12 @@ it ('Validar se estou na pagina correta', ()=> {
       )
 })
 
-//Localizando o botao "ONDE USAR MEU CARTAO VR" e clicando
+//Clicar no botão "ONDE USAR MEU CARTAO VR"
 it ('Clicar no botão - Onde usar meu cartão VR', ()=> {
-    cy.get('.vr-button.vr-button--negative').click();
+    //Clicar no botão "Onde usar meu cartão VR?""
+    cy.get('.vr-hero__actions > .vr-button--negative').click();
 
-    //Aqui eu estou validando se o MAPA está visivel após clicar no botão
+    //Verificar o MAPA
     cy.get('#map').should('be.visible').wait(4000);
 })
 
