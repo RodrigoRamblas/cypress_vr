@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
-    "local": "npx cypress run"
+    "test": "npx cypress open"
   },
   "author": "Rodrigo Ramblas",
   "license": "ISC",
