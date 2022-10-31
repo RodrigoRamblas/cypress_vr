@@ -1,6 +1,6 @@
 describe('Validar o fluxo Para Você', () => {
   //Acessando o site e aceitando os termos
-  beforeEach('Acessar o site VR', () => {
+  before('Acessar o site VR', () => {
     cy.visit('/')
     Cypress.Cookies.debug(true)
     cy.get('#lum_4028808471FC1D5D0171FE80340D6AC8_quickAcceptTerm').click()
