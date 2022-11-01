@@ -27,7 +27,12 @@
 <img width="603" alt="image" src="https://user-images.githubusercontent.com/50155338/199077844-a0aded20-5754-475e-bafb-6ffb2374bdd6.png">
 <p>Clicar no Cenário, a automação iniciara o teste</p>
 <img width="1434" alt="image" src="https://user-images.githubusercontent.com/50155338/199078745-6a6067d7-9c11-4cbd-b725-0528db18e5c7.png">
-
-
-
-
+<h2>Instalando o Report mochawesome</h2>
+<ul>
+  <li>Executar no terminal o comando: npm i -D mochawesome</li>
+  <li>Executar no terminal o comando: npx cypress run --reporter mochawesome 
+</ul>
+<img width="582" alt="image" src="https://user-images.githubusercontent.com/50155338/199208912-48f544a9-e32b-404d-8e3e-b94f94c5dc1c.png">
+<img width="1049" alt="image" src="https://user-images.githubusercontent.com/50155338/199210227-58d7f471-8e24-41e6-bc74-b4132bcc67bc.png">
+<img width="1311" alt="image" src="https://user-images.githubusercontent.com/50155338/199210701-6b3a435a-3e05-48d7-8c83-049dc53e0980.png">
+<img width="1435" alt="image" src="https://user-images.githubusercontent.com/50155338/199211019-b31e439e-3584-400b-b9ee-c5d34fb9fa27.png">
