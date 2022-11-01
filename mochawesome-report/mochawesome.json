@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-01T10:10:11.108Z",
+    "end": "2022-11-01T10:10:37.688Z",
+    "duration": 26580,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a2a093c8-4fce-4c03-bb40-7e9823e27b96",
+      "title": "",
+      "fullFile": "cypress/e2e/vr_com_br/vr.com.br.cy.js",
+      "file": "cypress/e2e/vr_com_br/vr.com.br.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7be37569-9084-40e8-a4c5-1b2a1510f994",
+          "title": "Validar o fluxo Para Você",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navegar até a seção - pra voce",
+              "fullTitle": "Validar o fluxo Para Você Navegar até a seção - pra voce",
+              "timedOut": null,
+              "duration": 20843,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(':nth-child(3) > .vr-quick-navigation__link').click();",
+              "err": {},
+              "uuid": "d09f8ed3-06fc-4791-b2e9-a59df9e9902e",
+              "parentUUID": "7be37569-9084-40e8-a4c5-1b2a1510f994",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar se estou na pagina correta",
+              "fullTitle": "Validar o fluxo Para Você Validar se estou na pagina correta",
+              "timedOut": null,
+              "duration": 413,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('be.equal', `${Cypress.config(\"baseUrl\")}/onde-aceita.htm`);",
+              "err": {},
+              "uuid": "e5ce4195-4683-4f5a-862b-b13c2cd21f54",
+              "parentUUID": "7be37569-9084-40e8-a4c5-1b2a1510f994",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clicar no botão - Onde usar meu cartão VR",
+              "fullTitle": "Validar o fluxo Para Você Clicar no botão - Onde usar meu cartão VR",
+              "timedOut": null,
+              "duration": 5153,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Clicar no botão \"Onde usar meu cartão VR?\"\"\ncy.get('.vr-hero__actions > .vr-button--negative').click(); //Verificar o MAPA\ncy.get('#map').should('be.visible').wait(4000);",
+              "err": {},
+              "uuid": "b86e4bb3-e15f-4640-9e5f-fa65eb172b89",
+              "parentUUID": "7be37569-9084-40e8-a4c5-1b2a1510f994",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d09f8ed3-06fc-4791-b2e9-a59df9e9902e",
+            "e5ce4195-4683-4f5a-862b-b13c2cd21f54",
+            "b86e4bb3-e15f-4640-9e5f-fa65eb172b89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26409,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
